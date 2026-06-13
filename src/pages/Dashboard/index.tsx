@@ -62,8 +62,8 @@ export default function Dashboard() {
 
       {/* Map + Right Panel */}
       <div className="grid grid-cols-1 xl:grid-cols-10 gap-4">
-        {/* Map — 7 cols */}
-        <Card className="xl:col-span-7 p-5">
+        {/* Map — 6 cols */}
+        <Card className="xl:col-span-6 p-5">
           <div className="flex items-center justify-between mb-4">
             <div>
               <h2 className="font-bold text-gray-900 text-base">Tamil Nadu — District Heat Map</h2>
@@ -89,12 +89,12 @@ export default function Dashboard() {
               setSelectedDistrict(d)
               navigate('/organization/districts')
             }}
-            height={400}
+            height={660}
           />
         </Card>
 
-        {/* Right panels — 3 cols */}
-        <div className="xl:col-span-3 flex flex-col gap-4">
+        {/* Right panels — 4 cols */}
+        <div className="xl:col-span-4 flex flex-col gap-4">
           {/* Top Districts */}
           <Card className="p-4">
             <h3 className="font-bold text-gray-900 text-sm mb-3">Top 5 Districts</h3>
